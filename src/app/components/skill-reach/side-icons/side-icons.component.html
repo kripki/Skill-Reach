@@ -1,0 +1,32 @@
+<div id="mySidenav" class="sidenav">
+    <button *ngIf="!islogin" data-toggle="modal" data-target="#myModalR0">
+        <div class="tooltip"><i class="far fa-user"></i>
+            <span class="tooltiptext">Login/SignUp</span>
+        </div>
+    </button>
+    <button *ngIf="islogin" data-toggle="modal" data-target="#myModalAccount">
+        <div class="tooltip"><i class="far fa-user"></i>
+            <span class="tooltiptext">My Account</span>
+        </div>
+    </button><br><hr>
+    <button href="#">
+        <div class="tooltip"><i class="fas fa-user-graduate"></i>
+            <span class="tooltiptext">What our Students have to Say</span>
+        </div>
+    </button><br><hr>
+    <button href="#">
+        <div class="tooltip"><i class="fa fa-question"></i>
+            <span class="tooltiptext">Ask us Anything</span>
+        </div>
+    </button><br><hr>
+    <button href="#">
+        <div class="tooltip"><i class="fa fa-star-o"></i>
+            <span class="tooltiptext">Rating</span>
+        </div>
+    </button><br><hr>
+    <button href="#">
+        <div class="tooltip"><i class="far fa-comment-alt"></i>
+            <span class="tooltiptext">Chat Box</span>
+        </div>
+    </button>
+</div>

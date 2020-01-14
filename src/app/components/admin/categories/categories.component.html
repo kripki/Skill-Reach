@@ -1,0 +1,88 @@
+<main class="app-content">
+
+        <div class="app-title">
+            <div style="float: right;">
+                <span class="btn btn-outline-primary" (click)="hideshowpage('categorylistpage')"> <i class="fa fa-list" aria-hidden="true"></i>Categories List</span>
+                <span class="btn btn-outline-primary" (click)="mynewcategory()"> <i class="fa fa-plus" aria-hidden="true"></i>Add Categories</span>
+            </div>
+          <div>
+            <h1><i class="fa fa-th-list"></i> <span class="pagetitle">Manage Category</span></h1>
+          </div>
+        </div>
+    
+        <div class="row app-title tablepage categorylistpage">
+          <div class="col-md-12">
+            <div class="tile">
+              <div class="tile-body table-responsive">
+                <table class="table table-hover table-bordered" id="sampleTable">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Name</th>
+                      <th>Description</th>  
+                      <th>Image</th>              
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let category of allcategories; let i = index;">
+                        <td>{{i+1}}</td>
+                        <td>{{category.name}}</td>
+                        <td>{{category.description}}</td> 
+                        <td align="center"><img alt="Category Image" src="{{baseurl}}categories/{{category.image}}" style="width: 10rem;"></td>
+                        <td align="center" >
+                          <button  style="cursor: pointer;" (click)="editcategory(category)"><i class="fa fa-pencil edit"></i></button>
+                          <button  class="delete" style="cursor: pointer;" (click)="removecategory(category._id)"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row app-title d-none tablepage addcategorypage">
+          <div class="col-md-12">
+            <div class="tile">
+              <div class="tile-body">
+                  <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
+                    <form  (submit)="addupdatecategory()" enctype="multipart/form-data">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="col-form-label">Name <span class="text-danger">*</span></label>
+                            <input class="form-control" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="col-form-label">Description <span class="text-danger">*</span></label>
+                            <input class="form-control" type="text"  [(ngModel)]="description" [ngModelOptions]="{standalone: true}"  placeholder="Description">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="text-center" *ngIf ="imageUrl">
+                            <img class="imagexy" [src]="imageUrl" alt="Image Not Picked Yet">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group text-center">
+                            <span *ngIf="newcategory" class="btn btn-primary" (click)="fileInput.click()">Add Image</span><br>
+                            <span *ngIf="!newcategory" class="btn btn-primary" (click)="fileInput.click()">Change Image</span><br>
+                            <input type="file"  accept="image/*" #fileInput (change)="onImagePicked($event)">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 text-center">
+                        <button *ngIf="newcategory" type="submit" class="btn btn-primary m-1">Add Category</button>
+                        <button *ngIf="!newcategory" type="submit" class="btn btn-primary m-1">Edit Category</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </main>

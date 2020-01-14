@@ -1,0 +1,38 @@
+#coursepage{
+    padding: 180px 20px 100px 20px;
+    text-align: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+}
+h2{
+    font-weight: 400;
+    color: #555;
+}
+h5{
+    color: royalblue;
+    font-size: 2rem;
+    font-weight: 350;
+}
+h6{
+    font-size: 1.2rem;
+}
+.course-item{
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 8px #efefef;
+}
+.cardtext{
+    padding: 30px 20px 30px 20px;
+}
+.cardimage{
+    padding: 0px;
+}

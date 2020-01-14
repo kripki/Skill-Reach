@@ -1,0 +1,104 @@
+
+
+<main class="app-content">
+
+    <div class="app-title">
+        <div style="float: right ;">
+            <span class="btn btn-outline-primary" (click)="hideshowpage('mycourses')"> <i class="fa fa-list" aria-hidden="true"></i>My Courses</span>
+            <span class="btn btn-outline-primary" (click)="hideshowpage('categorypage')"> <i class="fa fa-plus" aria-hidden="true"></i>Add New Course</span>
+        </div>
+      <div>
+        <h1><i class="fa fa-th-list"></i> <span class="pagetitle">My Courses</span></h1>
+      </div>
+    </div>
+
+    <div class="tablepage categorypage d-none">
+      <div >
+        <span class="button" (click)="newcategory()"> <i class="fa fa-list" aria-hidden="true"></i>New Category</span>
+        <span class="button" (click)="selectcategory()"> <i class="fa fa-plus" aria-hidden="true"></i>Select Category</span>
+      </div>
+      <div class="newcategory d-none">
+        <div >
+          <label class="col-form-label">Name <span class="text-danger">*</span></label>
+          <input class="form-control" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name">
+        </div>
+        <div class>
+          <label class="col-form-label">Description <span class="text-danger">*</span></label>
+          <input class="form-control" type="text"  [(ngModel)]="description" [ngModelOptions]="{standalone: true}"  placeholder="Description">
+        </div>
+      </div>
+      <div class="selectcategory d-none ">
+        <div >
+          <label class="col-form-label">Select Category <span class="text-danger">*</span></label>
+          <input class="form-control" [(ngModel)]="selectfromcategory" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name">
+        </div>
+      </div>
+      <span class="button" (click)="hideshowpage('subcategorypage')"> <i class="fa fa-plus" aria-hidden="true"></i>NEXT</span>
+    </div>
+  
+
+    <div class="tablepage subcategorypage d-none ">
+      <div *ngIf="newcat">
+        <div>
+          <div >
+            <label class="col-form-label">Name <span class="text-danger">*</span></label>
+            <input class="form-control" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name">
+          </div>
+          <div class>
+            <label class="col-form-label">Description <span class="text-danger">*</span></label>
+            <input class="form-control" type="text"  [(ngModel)]="description" [ngModelOptions]="{standalone: true}"  placeholder="Description">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!newcat">
+        <span class="button" (click)="newsubcategory()"> <i class="fa fa-list" aria-hidden="true"></i>New Sub-Category</span>
+        <span class="button" (click)="selectsubcategory()"> <i class="fa fa-plus" aria-hidden="true"></i>Select Sub-Category</span>
+      
+        <div class="newsubcategory d-none">
+          <div >
+            <label class="col-form-label">Name <span class="text-danger">*</span></label>
+            <input class="form-control" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name">
+          </div>
+          <div class>
+            <label class="col-form-label">Description <span class="text-danger">*</span></label>
+            <input class="form-control" type="text"  [(ngModel)]="description" [ngModelOptions]="{standalone: true}"  placeholder="Description">
+          </div>
+        </div>
+        <div class="selectsubcategory d-none ">
+          <div >
+            <label class="col-form-label">selectsubcategory <span class="text-danger">*</span></label>
+            <input class="form-control" [(ngModel)]="selectsubcategory" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name">
+          </div>
+        </div>
+      </div>
+      <span class="button" (click)="hideshowpage('coursepage')"> <i class="fa fa-plus" aria-hidden="true"></i>NEXT</span>
+    </div>
+
+    <div class="tablepage coursepage d-none">
+      <div >
+        <label class="col-form-label">Name <span class="text-danger">*</span></label>
+        <input class="form-control" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name">
+      </div>
+      <div class>
+        <label class="col-form-label">Description <span class="text-danger">*</span></label>
+        <input class="form-control" type="text"  [(ngModel)]="description" [ngModelOptions]="{standalone: true}"  placeholder="Description">
+      </div>
+      <span class="button" (click)="hideshowpage('videopage')"> <i class="fa fa-plus" aria-hidden="true"></i>NEXT</span>
+    </div>
+    
+  
+  
+
+    <div class="row app-title tablepage courselistpage">
+      <div class="col-md-12">
+        <div class="tile">
+          <div class="tile-body table-responsive">
+            <table class="table table-hover table-bordered" id="sampleTable">
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</main>

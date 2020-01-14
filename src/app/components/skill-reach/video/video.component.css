@@ -1,0 +1,39 @@
+#videopage{
+    padding: 160px 20px 100px 20px;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    color: #888;
+    font-size: 1.5rem;
+}
+.video {
+    padding: 2rem;
+}
+.right i{
+    float: right;
+}
+.replies{
+    color: blue;
+}
+.comment{
+    padding: 1.5rem;
+}
+.far{
+    font-size: medium; border-radius: 100%; background-color: #ccc; padding: 1rem;
+}
+input{
+    width: 80%;
+    border-width: 0px 0px 1px 0px;
+    outline: none;
+}
+button{
+    background-color: white;
+    outline: none;
+}

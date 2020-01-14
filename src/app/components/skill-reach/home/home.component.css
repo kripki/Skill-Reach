@@ -1,0 +1,24 @@
+#home{
+    background-color: rgb(243, 242, 242);
+}
+section{
+    padding-top: 100px;
+    top: 0;
+}
+pre{
+    font-weight: 750;
+    font-size: 8vw;
+    font-family: 'Comic Sans MS',monospace,sans-serif;
+    padding-left: 100px;
+    padding-top: 100px;
+    line-height: normal;
+    border: none;
+    color: #333;
+    background-color: rgb(243, 242, 242);
+}
+img{
+    width: auto; 
+    height: 550px;
+    padding-top: 10px;
+    float: right;
+}

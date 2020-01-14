@@ -1,0 +1,121 @@
+<div class="login">
+    <div class="modal fade" id="myModalR0" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content text-center">
+                <div class="modal-body text-center row" style="background-color: white;">
+                    <button (click)="loginby('mobile')" class="choose col-5" data-dismiss="modal" data-toggle="modal" data-target="#myModalR1">Login Using Mobile</button>
+                    <span class="col-2"></span>
+                    <button (click)="loginby('email')" class="choose col-5" data-dismiss="modal" data-toggle="modal" data-target="#myModalR1">Login Using Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModalR1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content text-center">
+                <div class="modal-body text-center" style="background-color: white;">
+                    <i class="fa fa-times closeForm cursor" data-dismiss="modal"></i>
+                    <br><br>
+                    <form (submit)="login()">
+                        <h2>Login Form</h2>
+                        <h3>Login to your Account</h3>
+                        <p id="checkLogin"></p>
+                        <div class="container">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <label *ngIf="!loginisby" class="col-sm-12 ">
+                                        <br>Mobile
+                                        <input [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" class="form-control" name="mobile" type="text" required>
+                                    </label>
+                                    <label *ngIf="loginisby" class="col-sm-12 ">
+                                        <br>Email
+                                        <input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" name="email" type="email" required>
+                                    </label>
+                                    <label class="col-sm-12 ">
+                                        <br>Password
+                                        <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" name="password" type="password" required >
+                                    </label>
+                                    <div class="col-sm-12">
+                                        <br><br><br>
+                                        <button class="make loginBtn" style="padding-top: 6px; padding-bottom: 7px; width: 150px;">Login</button>
+                                        <br><br>
+                                    </div>
+                                    <div class="col-sm-12" style="margin-left: -20px;">
+                                        New User?<button class="new" data-dismiss="modal" data-toggle="modal" data-target="#myModalR2">Sign Up</button>
+                                        <br><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="myModalR2" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content text-center">
+                <div class="modal-body text-center" style="background-color: white;">
+                    <i class="fa fa-times closeForm cursor" data-dismiss="modal"></i>
+                    <br><br>
+                    <form (submit)="register()">
+                        <h2 >Registration Form</h2>
+                        <h3 >Register your Account</h3>
+                        <p id="checkRegister"></p>
+                        <div class="container">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <label class="col-sm-6 ">
+                                        <br>Name
+                                        <input [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="form-control" name="name" type="text" id="name" required>
+                                    </label>
+                                    <label class="col-sm-6 ">
+                                        <br>Email
+                                        <input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" name="email" type="email" id="email" required >
+                                    </label>
+                                    <label class="col-sm-6 ">
+                                        <br>Mobile
+                                        <input [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" class="form-control" name="mobile" type="text" id="cmobile" required>
+                                    </label>
+                                    <label class="col-sm-6 ">
+                                        <br>Gender
+                                        <input [(ngModel)]="gender" [ngModelOptions]="{standalone: true}" class="form-control" name="gender" type="text" id="gender" required>
+                                    </label>
+                                    <label class="col-sm-6 ">
+                                        <br>Password
+                                        <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" name="password" type="password" id="cpassword" required >
+                                    </label>
+                                    <label class="col-sm-6 ">
+                                        <br>Confirm Password
+                                        <input [(ngModel)]="password2" [ngModelOptions]="{standalone: true}" class="form-control" name="password" type="password" id="cpassword" required >
+                                    </label>
+                                    <div class="col-sm-12">
+                                        <br><br><br>
+                                        <button class="make registerBtn" style="padding-top: 6px; padding-bottom: 7px; width: 150px;">Register</button>
+                                        <br><br>
+                                        <div class="col-sm-12" style="margin-left: -20px;">
+                                            Already have an account?<button class="new" data-dismiss="modal" data-toggle="modal" data-target="#myModalR1">Login</button>
+                                            <br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModalAccount" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center">
+            <div class="modal-body text-center" style="background-color: white;">
+                <button class="make" (click)="logout()" data-dismiss="modal">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>

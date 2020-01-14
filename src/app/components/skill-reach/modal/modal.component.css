@@ -1,0 +1,40 @@
+.closeForm{
+    float: right;
+    background-color: rgb(82, 147, 255);
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+.modal-body {
+    padding: 0rem !important;
+}
+h3{
+    color: gray;
+}
+#myModalR0 .modal-content, #myModalAccount .modal-content {
+    padding: 10rem;;
+}
+.make {
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    background-color: cornflowerblue;
+}
+.choose {
+    padding: 3rem;
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+    background-color: cornflowerblue;
+}
+.new {
+    padding: 0rem;
+    font-size: 10px;
+    color: blue;
+    background-color: white;
+    border: 0px;
+}
+form {
+    padding: 5rem 7rem 4rem 7rem;
+}

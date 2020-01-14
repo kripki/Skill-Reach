@@ -1,0 +1,63 @@
+#contactus{
+    padding-top: 80px;
+    background-color: #fcfcfc;
+}
+h1{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+}
+h2{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #555;
+}
+h3{
+    font-weight: 500;
+}
+h4{
+    font-size: 13px;
+    color: #666;
+    font-weight: 200;
+}
+.row{
+    padding: 50px;
+}
+.col-4 div{
+    padding: 5rem;
+    margin: 1rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 2px 2px #eee;
+}
+.col-4 div:hover{
+    box-shadow: 1px 1px 2px 2px #ddd;
+}
+.iconimage{
+    width: 8rem;
+    font-size: 3rem;
+    height: 8rem;
+    color: rgb(82, 147, 255);
+    padding: 2rem !important;
+    margin: auto !important;
+    border-radius: 100px;
+}
+.button {
+    background-color: #fe774a; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: 650;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover{
+    opacity: 0.8;
+}
+input[type=button]{
+    outline: none;
+}

@@ -1,0 +1,46 @@
+<div class="head">
+    <h1>SKILL REACH<button id="openbtn">☰</button><span>Admin</span></h1>
+</div>
+
+<div id="sidenav">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <button class="dropdown-btn">
+            <i class="fa fa-database"></i>  Master 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <li><a data-toggle="tab" href="#student"><i class="fa fa-circle-o"></i> Students</a></li>
+            <li><a data-toggle="tab" href="#team"><i class="fa fa-circle-o"></i> Team</a></li>
+            <li><a data-toggle="tab" href="#categories"><i class="fa fa-circle-o"></i> Categories</a></li>
+            <li><a data-toggle="tab" href="#subcategories"><i class="fa fa-circle-o"></i> Sub Categories</a></li>
+            <li><a data-toggle="tab" href="#videos"><i class="fa fa-circle-o"></i> Videos</a></li>
+            <li><a data-toggle="tab" href="#say"><i class="fa fa-circle-o"></i> What our Students have to say</a></li>
+            <li><a data-toggle="tab" href="#rating"><i class="fa fa-circle-o"></i> Rating</a></li>
+        </div>
+        <button class="dropdown-btn">
+            <i class="fa fa-gear"></i>  Settings 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <li><a data-toggle="tab" href="#profile"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a data-toggle="tab" href="#changepassword"><i class="fa fa-circle-o"></i> Change Password</a></li>
+            <li><a data-toggle="tab" href="#"><i class="fa fa-circle-o"></i> Logout</a></li>
+        </div>
+    </ul>
+</div>
+
+<div id="main">
+    <div class="tab-content">
+        <section id="dashboard" class="tab-pane fade in active"><admin-dashboard></admin-dashboard></section>
+        <section id="student" class="tab-pane fade"><admin-students></admin-students></section>
+        <section id="team" class="tab-pane fade"><admin-team></admin-team></section>
+        <section id="categories" class="tab-pane fade"><admin-categories></admin-categories></section>
+        <section id="subcategories" class="tab-pane fade"><admin-subcategories></admin-subcategories></section>
+        <section id="videos" class="tab-pane fade"><admin-videos></admin-videos></section>
+        <section id="say" class="tab-pane fade"><admin-say></admin-say></section>
+        <section id="rating" class="tab-pane fade"><admin-rating></admin-rating></section>
+        <section id="profile" class="tab-pane fade"><admin-profile></admin-profile></section>
+        <section id="changepassword" class="tab-pane fade"><admin-changepassword></admin-changepassword></section>
+    </div>
+</div>

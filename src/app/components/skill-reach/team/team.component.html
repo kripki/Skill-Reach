@@ -1,0 +1,105 @@
+<app-topbar></app-topbar>
+<side-icons></side-icons>
+
+<section id="team">
+    <h1>MASTER CREW</h1>
+    <h2>Our professional team will be happy to bring<br>amazing ideas and projects to life</h2>
+    <div style="padding: 0px 50px 0px 50px;">
+        <div class="row">
+            <div class="col-md-6" style="padding: 50px; height: 360px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 50px; height: 360px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 50px; height: 360px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 50px; height: 360px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 50px; height: 360px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 50px; height: 360px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="padding: 5rem;">
+                <h1>JOIN OUR TEAM</h1>
+                <h2>Be part of an amazing team that lives<br>to create and make world more beautiful</h2>            
+            </div>
+            <div class="col-md-6" *ngFor="let category of allcategories;" style="padding: 50px; height: 360px;">
+              <div class="row mycard1">
+                  <div class="col-6" style="padding: 0px;">
+                      <img alt="Category Image" src="{{baseurl}}categories/{{category.image}}">
+                  </div>
+                  <div class="col-6 cardtext">
+                      <h3>{{category.name}}</h3>
+                      <!-- <h5>frontend</h5> -->
+                      <h6>{{category.description}}</h6><br><br>
+                  </div>
+              </div>
+            </div>
+            
+        </div>
+        <div style="padding: 100px 0px 100px 0px; display: flex; justify-content: center;">
+          <input type="button" class="button" value="Join now!">
+        </div>
+    </div>
+</section>
+
+<footer></footer>

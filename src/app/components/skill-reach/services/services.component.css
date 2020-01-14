@@ -1,0 +1,152 @@
+#services{
+    background-color: rgb(82, 147, 255);
+    padding-top: 50px;
+}
+#services pre{
+    padding: 60px 10px 35px 35px;    
+    font-size: 60px;
+    line-height: normal;
+    color: white;
+    background-color: rgb(82, 147, 255);
+    border: none;
+}
+h5{
+    color: white;
+    font-size: 2rem;
+    font-weight: 350;
+}
+p{
+    color: #dddddd;
+    font-size: 1.4rem;
+}
+.sec{
+    padding: 0px 20px 50px 50px;
+}
+.category1:hover img {
+  transform: scale(1.3);
+  opacity: 0.6;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0px 50px 0px 50px; */
+}
+#categories{
+  width: 100%;
+  padding: 80px 5rem 0px 5rem;
+  background: linear-gradient(360deg, rgb(50, 50, 50) 75%, rgb(82, 147, 255) 25%);
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0px;
+}
+.category1{
+  overflow: hidden;
+  background: blueviolet;
+}
+.category1 img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.button {
+  background-color: #fe774a;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-weight: 650;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover{
+  opacity: 0.8;
+}
+input[type=button]{
+  outline: none;
+}
+h1{
+  font-size: 60px;
+}
+pre{
+  color: #333;
+  overflow: hidden;
+  border: none;
+}
+.cardtext{
+    padding: 80px 10px 30px 10px;
+}
+.mycard div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+.cardtext h5{
+    color: #08d7bd;;
+}
+h6{
+    font-size: 1.3rem;
+}
+.mycard{
+    height: 100%; 
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px;
+}
+#myCarousel{
+    box-shadow: 1px 1px 2px 2px #efefef;
+    border-radius: 10px;
+}
+.carousel, .carousel-inner, .item{
+    height: 100%;
+}
+.carousel-indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(46, 121, 182);
+    background-clip: unset;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    opacity: 0.6;
+    transition: opacity 1s ease;
+  }
+  .carousel-indicators .active{
+      opacity: 1;
+  }
+  .col-md-3{
+    padding: 0px;
+  }

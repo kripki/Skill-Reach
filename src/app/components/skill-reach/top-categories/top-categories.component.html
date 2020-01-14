@@ -1,0 +1,38 @@
+<app-topbar></app-topbar>
+<side-icons></side-icons>
+
+<section id="categories">
+    <h1>TOP CATEGORIES</h1>
+    <h2>See our latest projects that we are<br>proud to work on</h2>
+    <div class="container">
+                        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#all">All</a>
+            </li>
+            <li class="nav-item" *ngFor="let category of allcategories;">
+                <a class="nav-link" data-toggle="tab" href="#{{category._id}}">{{category.name}}</a>
+            </li>
+        </ul><br><br><br><br><br>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="all" class="tab-pane active">
+                <div class="row">
+                    <div class="category1 col-md-3"  *ngFor="let subcategory of allsubcategories;">
+                        <a href="/skill-reach/courses/"><img src="{{baseurl}}subcategories/{{subcategory.image}}" alt="Hello" style="height: 200px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="{{category._id}}" *ngFor="let category of allcategories;" class="tab-pane">
+                <div class="row">
+                    <div class="col-md-3"  *ngFor="let subcategory of allsubcategories;">
+                        <img src="{{baseurl}}subcategories/{{subcategory.image}}" alt="Hello" style="height: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer></footer>

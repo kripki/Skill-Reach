@@ -1,0 +1,126 @@
+<section  id="services">
+    <pre>
+<b>SERVICES 
+& PORTFOLIOS</b></pre>
+    <div class="row">
+        <div class="sec col-md-4 col-sm-12">
+            <h5>Brand Identity</h5>
+            <p>There live the blind texts. Separated they live in bookmarksgrove right</p>
+        </div>
+        <div class="sec col-md-4 col-sm-12">
+            <h5>Brand Identity</h5>
+            <p>There live the blind texts. Separated they live in bookmarksgrove right</p>
+        </div>
+        <div class="sec col-md-4 col-sm-12">
+            <h5>Brand Identity</h5>
+            <p>There live the blind texts. Separated they live in bookmarksgrove right</p>
+        </div>
+        <div class="sec col-md-4 col-sm-12">
+            <h5>Brand Identity</h5>
+            <p>There live the blind texts. Separated they live in bookmarksgrove right</p>
+        </div>
+        <div class="sec col-md-4 col-sm-12">
+            <h5>Brand Identity</h5>
+            <p>There live the blind texts. Separated they live in bookmarksgrove right</p>
+        </div>
+        <div class="sec col-md-4 col-sm-12">
+            <h5>Brand Identity</h5>
+            <p>There live the blind texts. Separated they live in bookmarksgrove right</p>
+        </div>
+    </div>
+</section>
+
+<section id="categories">
+    <div class="row">
+        <!-- <div class="col-md-3"> -->
+            <div class="category1 col-md-3"  *ngFor="let subcategory of allsubcategories;">
+                <img src="{{baseurl}}subcategories/{{subcategory.image}}" alt="Hello" style="height: 100%;">
+            </div>
+        <!-- </div> -->
+    </div>
+    <div style="display: flex; justify-content: center; padding: 110px 0px 120px 0px;">
+            <a href="skill-reach/categories"><input type="button" class="button" value="View All Categories"></a>
+    </div>
+</section>
+
+
+<section id="team">
+    <div style="padding: 120px 50px 50px 50px;">
+        <div class="row">
+            <div class="col-md-6" style="padding: 30px; background-color: rgb(246, 246, 246); border: none;">
+                <pre><h1><b> MASTER
+ CREW</b></h1>
+<h4>  Our professional team will be 
+  happy to bring amazing ideas 
+  and projects to life</h4></pre>
+            </div>
+            <div class="col-md-6">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row mycard">
+                            <div class="col-6" style="padding: 0px;">
+                                <img src="../../../../assets/images/download (1).jpg" alt="">
+                            </div>
+                            <div class="col-6 cardtext">
+                                <h3>Developer</h3>
+                                <h5>frontend</h5>
+                                <h6>If you are enthusiastic person with a pinch of talent don't hesitate to join our team</h6>
+                            </div>
+                        </div>
+                      </div>  
+                    <div  *ngFor="let category of allcategories;" class="item">
+                        
+                        <div class="row mycard">
+                            
+                            <div class="col-6" style="padding: 0px;">
+                                <img src="{{baseurl}}categories/{{category.image}}" alt="">
+                            </div>
+                            <div class="col-6 cardtext">
+                                <h3>{{category.name}}</h3>
+                                <!-- <h5>frontend</h5><br> -->
+                                <h6>{{category.description}}</h6>
+                            </div>
+                        
+                        </div>
+                    </div>
+            
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                </div>  
+              </div>
+            </div>
+            <div class="col-md-6" style="padding-top: 150px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding-top: 150px;">
+                <div class="row mycard">
+                    <div class="col-6" style="padding: 0px;">
+                        <img src="../../../../assets/images/download (1).jpg" alt="">
+                    </div>
+                    <div class="col-6 cardtext">
+                        <h3>KATE WILSON</h3>
+                        <h5>advertising</h5><br><br>
+                        <h6>Highly experienced professional that is going to make amazing things for you</h6><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 100px 0px 100px 0px; display: flex; justify-content: center;">
+                <a href="skill-reach/team"><input type="button" class="button" value="Meet the team" style="background-color: #08d7bd;"></a>
+        </div>
+    </div>
+</section>

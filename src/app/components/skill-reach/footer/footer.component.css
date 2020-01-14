@@ -1,0 +1,67 @@
+section{
+    padding-top: 80px;
+    margin: 0rem 16rem 4rem 16rem;
+    background-color: #fcfcfc;
+}
+hr{
+    border-top: 1.5px solid black;
+}
+h1{
+    letter-spacing: 0.2em;
+    font-size: 4rem;
+}
+h2{
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+}
+h3{
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+}
+h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+div{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+i{
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 100px;
+    font-size: 2rem;
+}
+.vl 
+{
+    border-left: 1.5px solid black;
+    height: 50px;
+    left: 50%;
+    position: relative;
+}
+input, button{
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem;
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+button{
+    border-top: 0px;
+}
+::placeholder {
+    color: black;
+}
+input:focus {
+    outline: none;
+}
+button:hover, i:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: 700ms;
+}
