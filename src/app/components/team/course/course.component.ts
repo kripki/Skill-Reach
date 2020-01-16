@@ -10,6 +10,9 @@ declare var $: any;
 export class TutorCourseComponent implements OnInit {
 
   newcat:boolean = false;
+  name:any;
+  description:any;
+  selectfromcategory:any;
 
   constructor() { }
 
