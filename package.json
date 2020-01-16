@@ -10,7 +10,11 @@
     "e2e": "ng e2e",
     "postinstall": "ng build — aot — prod"
   },
+<<<<<<< HEAD
   "engines": {
+=======
+  "engines": { 
+>>>>>>> 53b4c8ca94e76d02706777afb7bd759b59b205b8
     "node": "10.16.3",
     "npm": "6.9.0"
   },
