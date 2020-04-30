@@ -22,7 +22,7 @@
     "@angular/router": "~8.2.9",
     "bootstrap": "^4.3.1",
     "caniuse-lite": "^1.0.30001021",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
